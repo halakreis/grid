@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maingrid{
+          width: 800px;
+          height: 600px;
+          display: grid;
+          gap: 5px;
+          grid-template: repeat(3,1fr) / repeat(4,1fr);
+          margin: auto;
+          margin-top: 10px;
+        }
+        .maingrid div{
+            padding: 3px;
+            background-color: rgb(226, 219, 219);
+        }
+        .grid1{
+            padding: 3px;
+            display: grid;
+            grid-template: repeat(2,1fr) / repeat(2,1fr);
+            gap: 3px;
+        }
+        .grid1 div, .grid2 div, .grid3 div{
+            background-color: grey;
+            padding: 2px;
+        }
+        .grid2{
+            padding: 3px;
+           display: grid;
+           grid-template-rows: 1fr 1fr;
+           gap:2px;
+        }
+        .grid3{
+            padding: 3px;
+            gap: 3px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    </style>
+</head>
+<body>
+    <div class="maingrid">
+        <div>item1</div>
+        <div class="grid1">
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </div>
+        <div class="grid1">
+             <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </div>
+        <div>item4</div>
+        <div>item5</div>
+        <div class="grid2">
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+        </div>
+         <div class="grid3">
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+        </div>
+        <div>item8</div>
+        <div class="grid1">
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </div>
+        <div>item10</div>
+        <div>item11</div>
+         <div class="grid1">
+            <div>Sub 1</div>
+            <div>Sub 2</div>
+            <div>Sub 3</div>
+            <div>Sub 4</div>
+        </div>
+    </div>
+</body>
+</html>

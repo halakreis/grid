@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+            font-family: sans-serif;
+            padding: 5px;
+            border: 1px spolid transparent;
+            border-radius: 5px;
+        }
+        div{
+           display: grid;
+           grid-template-areas: "h h h h h" "s s n n n" "s s a a a" "s s a a a" "s s a a a" "s s a a a" "f f f f f";
+           gap:10px;
+           height: 600px;
+        }
+        h2{
+            text-align: center;
+        }
+        header{
+            grid-area:h;
+            background-color: yellow;
+        }
+        aside{
+            grid-area: s;
+            background-color: rgb(231, 82, 44);
+        }
+        nav{
+            grid-area: n;
+            background-color: cyan;
+        }
+        article{
+            grid-area: a;
+            background-color: rgb(209, 204, 204);
+        }
+        footer{
+            grid-area: f;
+            background-color: rgb(49, 47, 47);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header><h2>Header</h2></header>
+        <aside><h2>SideBar</h2></aside>
+        <nav><h2>Nav</h2></nav>
+        <article>
+            <h2>Article</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in perspiciatis quo pariatur, sint possimus assumenda aperiam? Nulla ratione, dolor illum impedit earum ex magnam deleniti, tempora sit officiis sunt?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in perspiciatis quo pariatur, sint possimus assumenda aperiam? Nulla ratione, dolor illum impedit earum ex magnam deleniti, tempora sit officiis sunt?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea in perspiciatis quo pariatur, sint possimus assumenda aperiam? Nulla ratione, dolor illum impedit earum ex magnam deleniti, tempora sit officiis sunt?</p>
+        </article>
+        <footer><h2>Footer</h2></footer>
+    </div>
+</body>
+</html>

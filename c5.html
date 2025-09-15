@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 1px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+        }
+        .grid{
+            display:grid ;
+            grid-template-areas: "one one two two two" "one one four four five" "three three four four six";
+            height:600px;
+            gap:5px;
+        }
+        .one{
+            grid-area:one;
+            background-color: blue;
+        }
+        .two{
+            grid-area:two;
+            background-color: rgb(8, 8, 56);
+        }
+        .three{
+            grid-area: three;
+            background-color: rgb(207, 203, 203);
+        }
+        .four{
+            grid-area: four;
+            background-color: rgb(154, 236, 154);
+        }
+        .five{
+            grid-area: five;
+            background-color: rgb(154, 236, 154);
+        }
+        .six{
+            grid-area: six;
+            background-color: rgb(240, 123, 142);
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+</html>

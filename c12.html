@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .grid{
+            width: 800px;
+            height: 700px;
+            margin: auto;
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        .flex{
+            border: 1px solid grey;
+            border-radius: 5px;
+            display: inline-flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            padding-left: 15px;
+            position: relative;
+        }
+        img{
+            width: 150px;
+            height: 130px;
+        }
+        button{
+            background-color: rgb(0, 119, 128);
+            border: 1px solid transparent;
+            border-radius: 10px;
+            width: 150px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            position:absolute;
+            bottom:2px;
+        }
+        p, li {
+            margin-bottom: 2px;
+        }
+        [alt="u3"]{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="flex">
+            <img src="u2.jfif" alt="u2">
+            <h4>Computer Starter Kit</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda cum necessitatibus heeloo</p>
+            <ul>
+                <li>Computer</li>
+                <li>Monitor</li>
+                <li>Keybord</li>
+                <li>Mouse</li>
+            </ul>
+            <button>BUY NOW</button>
+        </div>
+        <div class="flex">
+             <img src="u3.png" alt="u3">
+            <h4>Printer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <ul>
+                <li>page and ink not included</li>
+            </ul>
+            <button>BUY NOW</button>
+        </div>
+        <div class="flex">
+            <img src="u3.png" alt="u3">
+            <h4>Printer 2</h4>
+            <p>A la 1559</p>
+            <button>BUY NOW</button>
+        </div>
+        <div class="flex">
+            <h4>Mouse</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quibusdam veritatis eveniet facere. Cumque ipsa minus voluptatum reiciendis numqu. </p>
+            <button>BUY NOW</button>
+        </div>
+        <div class="flex">
+                <img src="u1.png" alt="u1">
+            <h4>Macintosh 8500</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum numquam mollitia explicabo, dolor .</p>
+            <button>BUY NOW</button>
+        </div>
+    </div>
+</body>
+</html>

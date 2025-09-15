@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .my-div{
+        padding: 5px;
+        border: 2px solid black;
+        width: 800px;
+        margin: auto;
+        margin-top: 10px;
+        height: 300px;
+       }
+       .grid{
+         padding: 5px;
+         border: 2px solid rgb(204, 197, 197);
+         display: grid;
+         justify-content: space-evenly;
+         grid-template: auto auto/ auto auto auto;
+         align-items: flex-start;
+         row-gap: 10px;
+         height: 250px;
+       }
+       .grid span{
+        padding: 3px;
+        background-color: rgb(204, 197, 197);
+        color: white;
+       }
+    </style>
+</head>
+<body>
+    <div class="my-div">
+     <span>Main content</span>
+        <div class="grid">
+            <span>Grid Item 1</span>
+            <span>Grid Item 2</span>
+            <span>Grid Item 3</span>
+            <span>Grid Item 4</span>
+            <span>Grid Item 5</span>
+            <span>Grid Item 6</span>
+        </div>
+    </div>
+</body>
+</html>

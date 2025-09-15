@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+       .grid{
+        display: grid;
+        padding: 15px;
+        width: 800px;
+        height: 800px;
+        margin: auto;
+        margin-top: 10px;
+        grid-template: repeat(5, auto) / repeat(16, 1fr);
+        row-gap: 10px;
+        column-gap: 2px;
+        background-color: rgb(255, 247, 247);
+        box-shadow: 2px 2px 0 0;
+       }
+       .c1{
+        grid-column: span 2;
+        border: 1px solid transparent;
+        border-radius: 14px;
+       }
+
+
+       .item2{
+        grid-column: span 5;
+       }
+       .item3{
+        grid-column: span 7;
+       }
+       .item4{
+        grid-column: span 2;
+        padding-left: 70px;
+       }
+       p{
+        grid-column: span 16;
+        grid-row: span 2;
+       }
+       .item5{
+        grid-column: span 16;
+        grid-row: span 3;
+       }
+       .item6{
+        grid-column: span 16;
+        grid-row: span 2;
+       }
+       span{
+        color: rgb(187, 185, 185);
+       }
+       .line{
+        height: 2px;
+        background-color: rgb(187, 185, 185);
+        margin-bottom: 5px;
+       }
+       .item7{
+        grid-column: span 3;
+        display: inline-block;
+        margin-right: 63%;
+       }
+       .flex{
+        display: inline-flex;
+        justify-content: space-evenly;
+       }
+       .item9 div{
+        border: 1px solid transparent;
+        border-radius: 10px;
+       }
+       [alt="kitty"]{
+        width: 100%;
+        height: 400px;
+        margin: auto;
+       }
+       .item9 div{
+        width: 30px;
+       }
+       h3{
+        font-size: 20px;
+        margin: 3px;
+       }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="c1"><img width="28" height="28" src="https://img.icons8.com/pulsar-line/50/F25081/user-male-circle.png" alt="user-male-circle"/> </div>
+        <div class="item2">
+            <h3>Anderson Wilson</h3>
+            <span>Editor</span>
+        </div>
+        <div class="item3"></div>
+        <div class="item4"><img width="15" height="15" src="https://img.icons8.com/ios-filled/50/F25081/sort-down.png" alt="sort-down"/></div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, numquam libero. Reprehenderit voluptates totam itaque, molestias quasi doloribus nesciunt quis voluptatem rerum accusamus. Odit enim at non reprehenderit ipsam eum?</p>
+        <div class="item5"><img src="kitty.jfif" alt="kitty"></div>
+     <div class="item6">
+        <div class="line"></div>
+        <div class="item7">
+            <span>Like</span>
+            <span>Tweet</span>
+            <span>Comment</span>
+        </div>
+        <div class="flex">
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/48/F25081/retweet.png" alt="retweet"/></div>
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/50/F25081/share-rounded.png" alt="share-rounded"/></div>
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/50/F25081/sent.png" alt="sent"/></div>
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/48/F25081/order-completed.png" alt="order-completed"/></div>
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/50/F25081/shopping-cart.png" alt="shopping-cart"/></div>
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/50/F25081/info.png" alt="info"/></div>
+            <div><img width="20" height="20" src="https://img.icons8.com/pulsar-line/50/F25081/connection-status-off.png" alt="connection-status-off"/></div>
+        </div>
+     </div>
+    </div>
+</body>
+</html>
